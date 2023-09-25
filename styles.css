@@ -3,7 +3,7 @@
 }
 body{
   font-family: 'Lora', serif;
-  background-color: #000;
+  background-image: url('back-page.jpg');
   background-size: cover; 
   background-repeat: no-repeat; 
 }
