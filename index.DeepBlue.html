@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>DeepBlue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+   
+    <header class="main-header">
+        <a class="main-logo" href="#">
+            <strong>DeepBlue</strong>
+        </a>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="index-log.html">Iniciar Sesion</a>
+                <a class="link-item" href="#paquetes">Paquetes</a>
+                <a class="link-item" href="#contacto">Contacto</a>
+                <a href="#carrito-icon" id="carrito-icon">
+                    <i class="car" id="cart-icon">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </i>
+                    <span id="cart-count"></span><a href="carrito.html">Ver Carrito</a>
+                </a>
+            </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Donde los Sueños Se Vuelven Azules</h1>
+          <p>DeepBlue te invita a sumergirte en un mundo desconocido bajo las olas. Descubre la emoción del buceo y la belleza de la vida marina a través de nuestras experiencias submarinas inolvidables.</p>
+        </div>
+    </section>
+
+    
+        <h1 class="titulo">Sumérgete</h1>
+        <main id="paquetes">
+            <div class="cart-item" data-product="Cave Exploration" data-price="29.99">
+                <img src="Cave Exploration.jpg" alt="Producto 1">
+                <h2>Cave Exploration</h2>
+                <p>La exploración de cuevas te sumerge en un mundo subterráneo fascinante. Descubre formaciones geológicas únicas, adéntrate en la oscuridad con tu linterna y experimenta una aventura única y desafiante en las profundidades de la Tierra.</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="cart-item" data-product="Coral Discovery" data-price="19.99">
+                <img src="Coral Discovery.jpg" alt="Producto 2">
+                <h2>Coral Discovery</h2>
+                <p>La exploración de coral te sumerge en un mundo submarino fascinante. Descubre ecosistemas de arrecifes únicos, explora la belleza marina y experimenta una aventura inolvidable en las profundidades del océano.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="cart-item" data-product="Marine Encounter" data-price="19.99">
+                <img src="Marine Encounter.jpg" alt="Producto 3">
+                <h2>Marine Encounter</h2>
+                <p>Marine Encounter te lleva a una aventura marina incomparable. Explora ecosistemas submarinos, interactúa con la vida marina y crea recuerdos inolvidables. Sumérgete en la belleza y misterio del océano con nosotros.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="cart-item" data-product="Nocturnal Underwater Adventure" data-price="19.99">
+                <img src="Nocturnal Underwater Adventure.jpg" alt="Producto 4">
+                <h2>Nocturnal Underwater Adventure</h2>
+                <p>La Nocturnal Underwater Adventure es una experiencia única. Sumérgete en el misterioso mundo submarino durante la noche, descubre criaturas fascinantes y vive una aventura emocionante bajo las estrellas. Explora la oscuridad del océano con nosotros.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="cart-item" data-product="Deep Dive Expedition" data-price="19.99">
+                <img src="Deep Dive Expedition.jpg" alt="Producto 5">
+                <h2>Deep Dive Expedition</h2>
+                <p>La Deep Dive Expedition es una inmersión profunda en un mundo desconocido. Explora las profundidades del océano, descubre maravillas submarinas y experimenta una aventura épica en las aguas más profundas. Únete a nosotros en esta expedición submarina única.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="cart-item" data-product="Turtle Haven" data-price="19.99">
+                <img src="Turtle Haven.jpg" alt="Producto 6">
+                <h2>Turtle Haven</h2>
+                <p>Turtle Haven te invita a un paraíso de tortugas marinas. Explora su hábitat, aprende sobre su conservación y sumérgete en la tranquilidad de este refugio natural, donde la belleza marina se encuentra con la conservación.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </main>
+    
+    </section>
+   
+    <h1 class="titulo-2">Contáctate</h1>
+    <section id="contacto" class="contact">
+        <div class="content">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form id="contact-form" action="" method="post">
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="tel" name="phone" id="phone">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="affair" id="affair">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: DeepBlue@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Más Información</h3>
+                    <p>Se anima a los visitantes a unirse a la comunidad para mantenerse al día con las últimas noticias, ofertas especiales y actualizaciones relacionadas con Deepblue.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023-DeepBlue. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <div id="cart-preview" class="cart-preview">
+        <h2>Carrito</h2>
+        <ul id="cart-items-list" class="cart-items-list">
+          <!-- Los elementos del carrito se agregarán aquí -->
+        </ul>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+        <button id="buy-button" style="display: none;">Comprar</button>
+        <button id="clear-cart" style="display: none;">Vaciar Carrito</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
