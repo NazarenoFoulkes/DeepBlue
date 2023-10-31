@@ -95,32 +95,36 @@
         </main>
     
     </section>
-   
     <h1 class="titulo-2">Contáctate</h1>
     <section id="contacto" class="contact">
         <div class="content">
             <div class="contact-wrapper">
                 <div class="contact-form">
-                    <form id="contact-form" action="" method="post">
+                    <form id="contact-form" action="" method="post" novalidate>
                         <p>
-                            <label>Nombre</label>
-                            <input type="text" name="fullname" id="fullname">
+                            <label for="fullname">Nombre</label>
+                            <input type="text" name="fullname" id="fullname" required>
+                            <span class="error" id="fullname-error"></span>
                         </p>
                         <p>
-                            <label>Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                            <span class="error" id="email-error"></span>
                         </p>
                         <p>
-                            <label>Teléfono</label>
-                            <input type="tel" name="phone" id="phone">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" name="phone" id="phone" required>
+                            <span class="error" id="phone-error"></span>
                         </p>
                         <p>
-                            <label>Asunto</label>
-                            <input type="text" name="affair" id="affair">
+                            <label for="affair">Asunto</label>
+                            <input type="text" name="affair" id="affair" required>
+                            <span class="error" id="affair-error"></span>
                         </p>
                         <p class="block">
-                            <label>Mensaje</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" rows="3" required></textarea>
+                            <span class="error" id="message-error"></span>
                         </p>
                         <p class="block">
                             <button type="submit">Enviar</button>
@@ -130,7 +134,6 @@
             </div>
         </div>
     </section>
-
 
     <footer>
         <div class="container">
@@ -157,15 +160,7 @@
             <p>&copy; 2023-DeepBlue. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <div id="cart-preview" class="cart-preview">
-        <h2>Carrito</h2>
-        <ul id="cart-items-list" class="cart-items-list">
-          <!-- Los elementos del carrito se agregarán aquí -->
-        </ul>
-        <p>Total: <span id="cart-total">$0.00</span></p>
-        <button id="buy-button" style="display: none;">Comprar</button>
-        <button id="clear-cart" style="display: none;">Vaciar Carrito</button>
-    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

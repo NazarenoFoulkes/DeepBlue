@@ -72,26 +72,58 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-const form = document.getElementById('contact-form');
 
-        form.addEventListener('submit', function (event) {
-            // Validar los campos del formulario aquí
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const affair = document.getElementById('affair').value;
-            const message = document.getElementById('message').value;
-
-            if (fullname === '' || email === '' || phone === '' || affair === '' || message === '') {
-                alert('Por favor, complete todos los campos.');
-                event.preventDefault(); // Evita que el formulario se envíe
-            }
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttonMenu = document.getElementById("button-menu");
-            const nav = document.getElementById("nav");
-        
-            buttonMenu.addEventListener("click", function () {
-                nav.classList.toggle("show");
-            });
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const fullname = document.getElementById('fullname');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const affair = document.getElementById('affair');
+    const message = document.getElementById('message');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevenir el envío por defecto del formulario
+  
+      const fullnameError = document.getElementById('fullname-error');
+      const emailError = document.getElementById('email-error');
+      const phoneError = document.getElementById('phone-error');
+      const affairError = document.getElementById('affair-error');
+      const messageError = document.getElementById('message-error');
+  
+      fullnameError.textContent = '';
+      emailError.textContent = '';
+      phoneError.textContent = '';
+      affairError.textContent = '';
+      messageError.textContent = '';
+  
+      let isValid = true;
+  
+      if (fullname.value.trim() === '') {
+        fullnameError.textContent = 'El nombre es obligatorio';
+        isValid = false;
+      }
+  
+      if (email.value.trim() === '') {
+        emailError.textContent = 'El correo electrónico es obligatorio';
+        isValid = false;
+      }
+  
+      if (phone.value.trim() === '') {
+        phoneError.textContent = 'El teléfono es obligatorio';
+        isValid = false;
+      }
+  
+      if (affair.value.trim() === '') {
+        affairError.textContent = 'El asunto es obligatorio';
+        isValid = false;
+      }
+  
+      if (message.value.trim() === '') {
+        messageError.textContent = 'El mensaje es obligatorio';
+        isValid = false;
+      }
+  
+      if (isValid) {
+      }
+    });
+  });
